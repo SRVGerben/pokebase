@@ -1,0 +1,41 @@
+Cleaning code
+=============
+
+<a href="/wiki/Generation_I" title="Generation I">Generation I</a> -> Generation I
+
+<a href="/wiki/Generation_II" title="Generation II">Generation II</a> -> Generation II
+
+<a href="/wiki/Pok%C3%A9mon_(species)" title="Pokémon (species)">Pokémon</a> -> Pokémon
+
+<a href="/wiki/List_of_Japanese_Pok%C3%A9mon_names" title="List of Japanese Pokémon names">Japanese</a> -> Japanese
+
+<a href="/wiki/Evolution" title="Evolution">evolves</a> -> evolves
+
+--------------------------------------------------------------------------------------------------------------------------------
+Colours
+=======
+
+<b><font color="f85888">Psychic-type</font></b>					|	<font color="705898">Ghost</font>
+										|
+<b><font color="blue">Water-type</font></b>					|	<font color="98d8d8">Ice</font>
+										|	
+<b><font color="c03028">Fighting-type</font></b>				|	<font color="a890f0">Flying</font>
+										|
+<b><font color="purple">Poison-type</font></b>					|	<font color="A8A878">Normal</font>
+										|
+<font color="green">Grass</font>						|	<font color="b8b8d0">Steel</font>
+										|
+<b><font color="e0c068">Ground-type</font></b>					|	<b><font color="f8d030">Electric-type</font></b>
+										|
+<font color="b8a038">Rock</font>						|	<b><font color="red">Fire-type</font></b>
+
+
+
+
+
+
+
+
+
+
+

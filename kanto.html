@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Pokédex - Kanto</title>
+
+  <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/jumbotron.css" rel="stylesheet">
+
+
+    <script>
+      function init() {
+        for (i = 0; i < 8; i++) { 
+          document.getElementById("c" + i).style.fontWeight = "normal";
+          document.getElementById("d" + i).style.display = "none";
+        }
+      }
+      function swap(choice) {
+        init();
+        switch (choice) {
+          case c1:
+            document.getElementById("c1").style.fontWeight = "bold";
+            document.getElementById("d1").style.display = "block";
+            break;
+          case c2:
+            document.getElementById("c2").style.fontWeight = "bold";
+            document.getElementById("d2").style.display = "block";
+            break;
+          case c3:
+            document.getElementById("c3").style.fontWeight = "bold";
+            document.getElementById("d3").style.display = "block";
+            break;
+          case c4:
+            document.getElementById("c4").style.fontWeight = "bold";
+            document.getElementById("d4").style.display = "block";
+            break;
+          case c5:
+            document.getElementById("c5").style.fontWeight = "bold";
+            document.getElementById("d5").style.display = "block";
+            break;
+          case c6:
+            document.getElementById("c6").style.fontWeight = "bold";
+            document.getElementById("d6").style.display = "block";
+            break;
+          case c7:
+            document.getElementById("c7").style.fontWeight = "bold";
+            document.getElementById("d7").style.display = "block";
+            break;
+          default:
+            document.getElementById("c0").style.fontWeight = "bold";
+            document.getElementById("d0").style.display = "block";
+            break;
+        }
+      }
+    </script>
+
+  </head>
+
+  <body onload="swap(c0)">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">The Pokédex</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Kanto</a></li>
+            <li><a href="wip.html">Johto</a></li>
+            <li><a href="wip.html">Hoenn</a></li>
+            <li><a href="wip.html">Sinnoh</a></li>
+            <li><a href="wip.html">Unova</a></li>
+            <li><a href="wip.html">Kalos</a></li>
+            <li><a href="wip.html">Alola</a></li>
+            <li><a href="wip.html">Galar</a></li>
+          </ul>
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Logo -->
+     <nav class="jumbo-nav">
+      <div class="navigation-wrapper">
+        <div class="navigation">
+          <div class="header-logo">
+            <a href="#">
+              <img src="./images/Pokemon-Logo.png" />
+            </a>
+          </div>
+        </div>
+      
+        <!-- Kanto pokédex -->
+        <div class="container">
+          <ul style="margin-bottom: 2rem; color: antiquewhite;">
+            <li id="c0" onclick="swap(c0)"><a href="#">1</a></li>
+            <li id="c1" onclick="swap(c1)"><a href="#">2</a></li>
+            <li id="c2" onclick="swap(c2)"><a href="#">3</a></li>
+            <li id="c3" onclick="swap(c3)"><a href="#">4</a></li>
+            <li id="c4" onclick="swap(c4)"><a href="#">5</a></li>
+            <li id="c5" onclick="swap(c5)"><a href="#">6</a></li>
+            <li id="c6" onclick="swap(c6)"><a href="#">7</a></li>
+            <li id="c7" onclick="swap(c7)"><a href="#">8</a></li>
+          </ul>
+          <section id="d0">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Bulbasaur <b>#001</b></h2>
+                  <img class="pokemon small" src="./images/001.png" />
+                  <p><b>Bulbasaur</b> (Japanese: <b>フシギダネ</b> <i>Fushigidane</i>) is a dual-type <b><font color="green">Grass</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Ivysaur <b>#002</b></h2>
+                  <img class="pokemon small" src="./images/002.png" />
+                  <p><b>Ivysaur</b> (Japanese: <b>フシギソウ</b> <i>Fushigisou</i>) is a dual-type <b><font color="green">Grass</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Venusaur <b>#003</b></h2>
+                  <img class="pokemon small" src="./images/003.png" />
+                  <p><b>Venusaur</b> (Japanese</a>: <b>フシギバナ</b> <i>Fushigibana</i>) is a dual-type <b><font color="green">Grass</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Charmander <b>#004</b></h2>
+                  <img class="pokemon small" src="./images/004.png" />
+                  <p><b>Charmander</b> (Japanese: <b>ヒトカゲ</b> <i>Hitokage</i>) is a <b><font color="red">Fire-type</font></b>  Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Charmeleon <b>#005</b></h2>
+                  <img class="pokemon small" src="./images/005.png" />
+                  <p><b>Charmeleon</b> (Japanese: <b>リザード</b> <i>Lizardo</i>) is a <b><font color="red">Fire-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Charizard <b>#006</b></h2>
+                  <img class="pokemon small" src="./images/006.png" />
+                  <p><b>Charizard</b> (Japanese: <b>リザードン</b> <i>Lizardon</i>) is a dual-type <b><font color="red">Fire</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Squirtle <b>#007</b></h2>
+                  <img class="pokemon small" src="./images/007.png" />
+                  <p><b>Squirtle</b> (Japanese: <b>ゼニガメ</b> <i>Zenigame</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Wartortle <b>#008</b></h2>
+                  <img class="pokemon small" src="./images/008.png" />
+                  <p><b>Wartortle</b> (Japanese: <b>カメール</b> <i>Kameil</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Blastoise <b>#009</b></h2>
+                  <img class="pokemon small" src="./images/009.png" />
+                  <p><b>Blastoise</b> (Japanese: <b>カメックス</b> <i>Kamex</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Caterpie <b>#010</b></h2>
+                  <img class="pokemon small" src="./images/010.png" />
+                  <p><b>Caterpie</b> (Japanese: <b>キャタピー </b> <i>Caterpie</i>) is a <b><font color="a8b820">Bug-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Metapod <b>#011</b></h2>
+                  <img class="pokemon small" src="./images/011.png" />
+                  <p><b>Metapod</b> (Japanese: <b>トランセル</b> <i>Transel</i>) is a <b><font color="a8b820">Bug-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Butterfree <b>#012</b></h2>
+                  <img class="pokemon small" src="./images/012.png" />
+                  <p><b>Butterfree</b> (Japanese: <b>バタフリー</b> <i>Butterfree</i>) is a dual-type <b><font color="a8b820">Bug</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Weedle <b>#013</b></h2>
+                  <img class="pokemon small" src="./images/013.png" />
+                  <p><b>Weedle</b> (Japanese: <b>ビードル</b> <i>Beedle</i>) is a dual-type <b><font color="a8b820">Bug</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Kakuna <b>#014</b></h2>
+                  <img class="pokemon small" src="./images/014.png" />
+                  <p><b>Kakuna</b> (Japanese: <b>コクーン</b> <i>Cocoon</i>) is a dual-type <b><font color="a8b820">Bug</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Beedrill <b>#015</b></h2>
+                  <img class="pokemon small" src="./images/015.png" />
+                  <p><b>Beedrill</b> (Japanese: <b>スピアー</b> <i>Spear</i>) is a dual-type <b><font color="a8b820">Bug</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Pidgey <b>#016</b></h2>
+                  <img class="pokemon small" src="./images/016.png" />
+                  <p><b>Pidgey</b> (Japanese: <b>ポッポ</b> <i>Poppo</i>) is a dual-type <b><font color="A8A878">Normal</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Pidgeotto <b>#017</b></h2>
+                  <img class="pokemon small" src="./images/017.png" />
+                  <p><b>Pidgeotto</b> (Japanese: <b>ピジョン</b> <i>Pigeon</i>) is a dual-type <b><font color="A8A878">Normal</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Pidgeot <b>#018</b></h2>
+                  <img class="pokemon small" src="./images/018.png" />
+                  <p><b>Pidgeot</b> (Japanese: <b>ピジョット</b> <i>Pigeot</i>) is a dual-type <b><font color="A8A878">Normal</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Rattata <b>#019</b></h2>
+                  <img class="pokemon small" src="./images/019.png" />
+                  <p><b>Rattata</b> (Japanese: <b>コラッタ</b> <i>Koratta</i>) is a <b><font color="A8A878">Normal</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Raticate <b>#020</b></h2>
+                  <img class="pokemon small" src="./images/020.png" />
+                  <p><b>Raticate</b> (Japanese: <b>ラッタ</b> <i>Ratta</i>) is a <b><font color="A8A878">Normal</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+          </section>
+          <section id="d1">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Spearow <b>#021</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/021.png" />
+                  <p><b>Spearow</b> (Japanese: <b>オニスズメ</b> <i>Onisuzume</i>) is a dual-type <b><font color="A8A878">Normal</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Fearow <b>#022</b></h2>
+                  <img class="pokemon small" src="./images/022.png" />
+                  <p><b>Fearow</b> (Japanese: <b>オニドリル</b> <i>Onidrill</i>) is a dual-type <b><font color="A8A878">Normal</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Ekans <b>#023</b></h2>
+                  <img class="pokemon small" src="./images/023.png" />
+                  <p><b>Ekans</b> (Japanese: <b>アーボ</b> <i>Arbo</i>) is a <b><font color="purple">Poison-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Arbok <b>#024</b></h2>
+                  <img class="pokemon small" src="./images/024.png" />
+                  <p><b>Arbok</b> (Japanese: <b>アーボック</b> <i>Arbok</i>) is a <b><font color="purple">Poison-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Pikachu <b>#025</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/025.png" />
+                  <p><b>Pikachu</b> (Japanese: <b>ピカチュウ</b> <i>Pikachu</i>) is an <b><font color="f8d030">Electric-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Raichu <b>#026</b></h2>
+                  <img class="pokemon small" src="./images/026.png" />
+                  <p><b>Raichu</b> (Japanese: <b>ライチュウ</b> <i>Raichu</i>) is an <b><font color="f8d030">Electric-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Sandshrew <b>#027</b></h2>
+                  <img class="pokemon small" src="./images/027.png" />
+                  <p><b>Sandshrew</b> (Japanese: <b>サンド</b> <i>Sand</i>) is a <b><font color="e0c068">Ground-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Sandslash <b>#028</b></h2>
+                  <img class="pokemon small" src="./images/028.png" />
+                  <p><b>Sandslash</b> (Japanese: <b>サンドパン</b> <i>Sandpan</i>) is a <b><font color="e0c068">Ground-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Nidoran♀ <b>#029</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/029.png" />
+                  <p><b>Nidoran♀</b> (Japanese: <b>ニドラン♀</b> <i>Nidoran♀</i>) is a <b><font color="purple">Poison-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Nidorina <b>#030</b></h2>
+                  <img class="pokemon small" src="./images/030.png" />
+                  <p><b>Nidorina</b> (Japanese: <b>ニドリーナ </b> <i>Nidorina</i>) is a <b><font color="purple">Poison-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Nidoqueen <b>#031</b></h2>
+                  <img class="pokemon small" src="./images/031.png" />
+                  <p><b>Nidoqueen</b> (Japanese: <b>ニドクイン</b> <i>Nidoqueen</i>) is a dual-type <b><font color="purple">Poison</font>/<font color="e0c068">Ground</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Nidoran♂ <b>#032</b></h2>
+                  <img class="pokemon small" src="./images/032.png" />
+                  <p><b>Nidoran♂</b> (Japanese: <b>ニドラン♂</b> <i>Nidoran♂</i>) is a <b><font color="purple">Poison-type</font></b> Pokémon introduced in Generation I</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Nidorino <b>#033</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/033.png" />
+                  <p><b>Nidorino</b> (Japanese: <b>ニドリーノ </b> <i>Nidorino</i>) is a <b><font color="purple">Poison-type</font></b> Pokémon introduced in Generation I.</p>                
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Nidoking <b>#034</b></h2>
+                  <img class="pokemon small" src="./images/034.png" />
+                  <p><b>Nidoking</b> (Japanese: <b>ニドキング</b> <i>Nidoking</i>) is a dual-type <b><font color="purple">Poison</font>/<font color="e0c068">Ground</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Clefairy <b>#035</b></h2>
+                  <img class="pokemon small" src="./images/035.png" />
+                  <p><b>Clefairy</b> (Japanese: <b>ピッピ</b> <i>Pippi</i>) is a <b><font color="ee99ac">Fairy-type</font></b> Pokémon introduced in Generation I. Prior to Generation VI, it was a <b><font color="A8A878">Normal-type</font></b> Pokémon.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Clefable <b>#036</b></h2>
+                  <img class="pokemon small" src="./images/036.png" />
+                  <p><b>Clefable</b> (Japanese: <b>ピクシー</b> <i>Pixy</i>) is a <b><font color="ee99ac">Fairy-type</font></b> Pokémon introduced in Generation I. Prior to Generation VI, it was a <b><font color="A8A878">Normal-type</font></b> Pokémon.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Vulpix <b>#037</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/037.png" />
+                  <p><b>Vulpix</b> (Japanese: <b>ロコン</b> <i>Rokon</i>) is a <b><font color="red">Fire-type</font></b> Pokémon introduced in Generation I.</p>                
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Ninetales <b>#038</b></h2>
+                  <img class="pokemon small" src="./images/038.png" />
+                  <p><b>Ninetales</b> (Japanese: <b>キュウコン</b> <i>Kyukon</i>) is a <b><font color="red">Fire-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Jigglypuff <b>#039</b></h2>
+                  <img class="pokemon small" src="./images/039.png" />
+                  <p><b>Jigglypuff</b> (Japanese: <b>プリン</b> <i>Purin</i>) is a dual-type <b><font color="A8A878">Normal</font>/<font color="ee99ac">Fairy-type</font></b> Pokémon introduced in Generation I. Prior to Generation VI, it was a pure <b><font color="A8A878">Normal-type</font></b> Pokémon.</p>                
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Wigglytuff <b>#040</b></h2>
+                  <img class="pokemon small" src="./images/040.png" />
+                  <p><b>Wigglytuff</b> (Japanese: <b>プクリン</b> <i>Pukurin</i>) is a dual-type <b><font color="A8A878">Normal</font>/<font color="ee99ac">Fairy-type</font></b> Pokémon introduced in Generation I. Prior to Generation VI, it was a pure <b><font color="A8A878">Normal-type</font></b> Pokémon.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+          </section>
+          <section id="d2">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Zubat <b>#041</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/041.png" />
+                  <p><b>Zubat</b> (Japanese: <b>ズバット</b> <i>Zubat</i>) is a dual-type <b><font color="purple">Poison</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Golbat <b>#042</b></h2>
+                  <img class="pokemon small" src="./images/042.png" />
+                  <p><b>Golbat</b> (Japanese: <b>ゴルバット</b> <i>Golbat</i>) is a dual-type <b><font color="purple">Poison</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Oddish <b>#043</b></h2>
+                  <img class="pokemon small" src="./images/043.png" />
+                  <p><b>Oddish</b> (Japanese: <b>ナゾノクサ</b> <i>Nazonokusa</i>) is a dual-type <b><font color="green">Grass</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Gloom <b>#044</b></h2>
+                  <img class="pokemon small" src="./images/044.png" />
+                  <p><b>Gloom</b> (Japanese: <b>クサイハナ</b> <i>Kusaihana</i>) is a dual-type <b><font color="green">Grass</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Vileplume <b>#045</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/045.png" />
+                  <p><b>Vileplume</b> (Japanese: <b>ラフレシア</b> <i>Ruffresia</i>) is a dual-type <b><font class="green">Grass</font>/<font class="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Paras <b>#046</b></h2>
+                  <img class="pokemon small" src="./images/046.png" />
+                  <p><b>Paras</b> (Japanese: <b>パラス </b> <i>Paras</i>) is a dual-type <b><font color="a8b820">Bug</font>/<font color="green">Grass</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Parasect <b>#047</b></h2>
+                  <img class="pokemon small" src="./images/047.png" />
+                  <p><b>Parasect</b> (Japanese: <b>パラセクト</b> <i>Parasect</i>) is a dual-type <b><font color="a8b820">Bug</font>/<font color="green">Grass</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Venonat <b>#048</b></h2>
+                  <img class="pokemon small" src="./images/048.png" />
+                  <p><b>Venonat</b> (Japanese: <b>コンパン</b> <i>Kongpang</i>) is a dual-type <b><font color="a8b820">Bug</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Venomoth <b>#049</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/049.png" />
+                  <p><b>Venomoth</b> (Japanese: <b>モルフォン</b> <i>Morphon</i>) is a dual-type <b><font color="a8b820">Bug</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Diglett <b>#050</b></h2>
+                  <img class="pokemon small" src="./images/050.png" />
+                  <p><b>Diglett</b> (Japanese: <b>ディグダ</b> <i>Digda</i>) is a <b><font color="e0c068">Ground-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Dugtrio <b>#051</b></h2>
+                  <img class="pokemon small" src="./images/051.png" />
+                  <p><b>Dugtrio</b> (Japanese: <b>ダグトリオ</b> <i>Dugtrio</i>) is a <b><font color="e0c068">Ground-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Meowth <b>#052</b></h2>
+                  <img class="pokemon small" src="./images/052.png" />
+                  <p><b>Meowth</b> (Japanese: <b>ニャース </b> <i>Nyarth</i>) is a <b><font color="A8A878">Normal-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Persian <b>#053</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/053.png" />
+                  <p><b>Persian</b> (Japanese: <b>ペルシアン</b> <i>Persian</i>) is a <b><font color="A8A878">Normal-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Psyduck <b>#054</b></h2>
+                  <img class="pokemon small" src="./images/054.png" />
+                  <p><b>Psyduck</b> (Japanese: <b>コダック</b> <i>Koduck</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Golduck <b>#055</b></h2>
+                  <img class="pokemon small" src="./images/055.png" />
+                  <p><b>Golduck</b> (Japanese: <b>ゴルダック</b> <i>Golduck</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Mankey <b>#056</b></h2>
+                  <img class="pokemon small" src="./images/056.png" />
+                  <p><b>Mankey</b> (Japanese: <b>マンキー</b> <i>Mankey</i>) is a <b><font color="c03028">Fighting-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Primeape <b>#057</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/057.png" />
+                  <p><b>Primeape</b> (Japanese: <b>オコリザル</b> <i>Okorizaru</i>) is a <b><font color="c03028">Fighting-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Growlithe <b>#058</b></h2>
+                  <img class="pokemon small" src="./images/058.png" />
+                  <p><b>Growlithe</b> (Japanese: <b>ガーディ</b> <i>Gardie</i>) is a <b><font color="red">Fire-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Arcanine <b>#059</b></h2>
+                  <img class="pokemon small" src="./images/059.png" />
+                  <p><b>Arcanine</b> (Japanese: <b>ウインディ</b> <i>Windie</i>) is a <b><font color="red">Fire-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Poliwag <b>#060</b></h2>
+                  <img class="pokemon small" src="./images/060.png" />
+                  <p><b>Poliwag</b> (Japanese: <b>ニョロモ </b> <i>Nyoromo</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+          </section>
+          <section id="d3">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Poliwhirl <b>#061</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/061.png" />
+                  <p><b>Poliwhirl</b> (Japanese: <b>ニョロゾ</b> <i>Nyorozo</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Poliwrath <b>#062</b></h2>
+                  <img class="pokemon small" src="./images/062.png" />
+                  <p><b>Poliwrath</b> (Japanese: <b>ニョロボン</b> <i>Nyorobon</i>) is a dual-type <b><font color="blue">Water</font>/<font color="c03028">Fighting</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Abra <b>#063</b></h2>
+                  <img class="pokemon small" src="./images/063.png" />
+                  <p><b>Abra</b> (Japanese: <b>ケーシィ</b> <i>Casey</i>) is a <b><font color="f85888">Psychic-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Kadabra <b>#064</b></h2>
+                  <img class="pokemon small" src="./images/064.png" />
+                  <p><b>Kadabra</b> (Japanese: <b>ユンゲラー</b> <i>Yungerer</i>) is a <b><font color="f85888">Psychic-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Alakazam <b>#065</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/065.png" />
+                  <p><b>Alakazam</b> (Japanese: <b>フーディン</b> <i>Foodin</i>) is a <b><font color="f85888">Psychic-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Machop <b>#066</b></h2>
+                  <img class="pokemon small" src="./images/066.png" />
+                  <p><b>Machop</b> (Japanese: <b>ワンリキー</b> <i>Wanriky</i>) is a <b><font color="c03028">Fighting-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Machoke <b>#067</b></h2>
+                  <img class="pokemon small" src="./images/067.png" />
+                  <p><b>Machoke</b> (Japanese: <b>ゴーリキー</b> <i>Goriky</i>) is a <b><font color="c03028">Fighting-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Machamp <b>#068</b></h2>
+                  <img class="pokemon small" src="./images/068.png" />
+                  <p><b>Machamp</b> (Japanese: <b>カイリキー</b> <i>Kairiky</i>) is a <b><font color="c03028">Fighting-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Bellsprout <b>#069</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/069.png" />
+                  <p><b>Bellsprout</b> (Japanese: <b>マダツボミ</b> <i>Madatsubomi</i>) is a dual-type <b><font color="green">Grass</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Weepinbell <b>#070</b></h2>
+                  <img class="pokemon small" src="./images/070.png" />
+                  <p><b>Weepinbell</b> (Japanese: <b>ウツドン</b> <i>Utsudon</i>) is a dual-type <b><font color="green">Grass</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Victreebel <b>#071</b></h2>
+                  <img class="pokemon small" src="./images/071.png" />
+                  <p><b>Victreebel</b> (Japanese: <b>ウツボット</b> <i>Utsubot</i>) is a dual-type <b><font color="green">Grass</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Tentacool <b>#072</b></h2>
+                  <img class="pokemon small" src="./images/072.png" />
+                  <p><b>Tentacool</b> (Japanese: <b>メノクラゲ</b> <i>Menokurage</i>) is a dual-type <b><font color="blue">Water</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Tentacruel <b>#073</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/073.png" />
+                  <p><b>Tentacruel</b> (Japanese: <b>ドククラゲ</b> <i>Dokukurage</i>) is a dual-type <b><font color="blue">Water</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Geodude <b>#074</b></h2>
+                  <img class="pokemon small" src="./images/074.png" />
+                  <p><b>Geodude</b> (Japanese: <b>イシツブテ</b> <i>Isitsubute</i>) is a dual-type <b><font color="b8a038">Rock</font>/<font color="e0c068">Ground</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Graveler <b>#075</b></h2>
+                  <img class="pokemon small" src="./images/075.png" />
+                  <p><b>Graveler</b> (Japanese: <b>ゴローン</b> <i>Golone</i>) is a dual-type <b><font color="b8a038">Rock</font>/<font color="e0c068">Ground</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Golem <b>#076</b></h2>
+                  <img class="pokemon small" src="./images/076.png" />
+                  <p><b>Golem</b> (Japanese: <b>ゴローニャ</b> <i>Golonya</i>) is a dual-type <b><font color="b8a038">Rock</font>/<font color="e0c068">Ground</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Ponyta <b>#077</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/077.png" />
+                  <p><b>Ponyta</b> (Japanese: <b>ポニータ</b> <i>Ponyta</i>) is a <b><font color="red">Fire-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Rapidash <b>#078</b></h2>
+                  <img class="pokemon small" src="./images/078.png" />
+                  <p><b>Rapidash</b> (Japanese: <b>ギャロップ</b> <i>Gallop</i>) is a <b><font color="red">Fire-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Slowpoke <b>#079</b></h2>
+                  <img class="pokemon small" src="./images/079.png" />
+                  <p><b>Slowpoke</b> (Japanese: <b>ヤドン</b> <i>Yadon</i>) is a dual-type <b><font color="blue">Water</font>/<font color="f85888">Psychic</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Slowbro <b>#080</b></h2>
+                  <img class="pokemon small" src="./images/080.png" />
+                  <p><b>Slowbro</b> (Japanese: <b>ヤドラン</b> <i>Yadoran</i>) is a dual-type <b><font color="blue">Water</font>/<font color="f85888">Psychic</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+          </section>
+          <section id="d4">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Ponyta <b>#077</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/077.png" />
+                  <p><b>Ponyta</b> (Japanese: <b>ポニータ</b> <i>Ponyta</i>) is a <b><font color="red">Fire-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Rapidash <b>#078</b></h2>
+                  <img class="pokemon small" src="./images/078.png" />
+                  <p><b>Rapidash</b> (Japanese: <b>ギャロップ</b> <i>Gallop</i>) is a <b><font color="red">Fire-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Slowpoke <b>#079</b></h2>
+                  <img class="pokemon small" src="./images/079.png" />
+                  <p><b>Slowpoke</b> (Japanese: <b>ヤドン</b> <i>Yadon</i>) is a dual-type <b><font color="blue">Water</font>/<font color="f85888">Psychic</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Slowbro <b>#080</b></h2>
+                  <img class="pokemon small" src="./images/080.png" />
+                  <p><b>Slowbro</b> (Japanese: <b>ヤドラン</b> <i>Yadoran</i>) is a dual-type <b><font color="blue">Water</font>/<font color="f85888">Psychic</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Magnemite <b>#081</b>
+                    </b></h2>
+                    <img class="pokemon small" src="./images/081.png" />
+                    <p><b>Magnemite</b> (Japanese: <b>コイル</b> <i>Coil</i>) is a dual-type <b><font color="f8d030">Electric</font>/<font color="b8b8d0">Steel</font></b> Pokémon introduced in Generation I. Prior to Generation II, it was a pure <b><font color="f8d030">Electric-type</font></b> Pokémon.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Magneton <b>#082</b></h2>
+                    <img class="pokemon small" src="./images/082.png" />
+                    <p><b>Magneton</b> (Japanese: <b>レアコイル</b> <i>Rarecoil</i>) is a dual-type <b><font color="f8d030">Electric</font>/<font color="b8b8d0">Steel</font></b> Pokémon introduced in Generation I. Prior to Generation II, it was a pure <b><font color="f8d030">Electric-type</font></b> Pokémon.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                 </div>
+               </div>
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Farfetch'd <b>#083</b></h2>
+                    <img class="pokemon small" src="./images/083.png" />
+                    <p><b>Farfetch'd</b> (Japanese: <b>カモネギ</b> <i>Kamonegi</i>) is a dual-type <b><font color="A8A878">Normal</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Doduo <b>#084</b></h2>
+                    <img class="pokemon small" src="./images/084.png" />
+                    <p><b>Doduo</b> (Japanese: <b>ドードー</b> <i>Dodo</i>) is a dual-type <b><font color="A8A878">Normal</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                 </div>
+               </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Dodrio <b>#085</b>
+                    </b></h2>
+                    <img class="pokemon small" src="./images/085.png" />
+                    <p><b>Dodrio</b> (Japanese: <b>ドードリオ</b> <i>Dodorio</i>) is a dual-type <b><font color="A8A878">Normal</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Seel <b>#086</b></h2>
+                    <img class="pokemon small" src="./images/086.png" />
+                    <p><b>Seel</b> (Japanese: <b>パウワウ</b> <i>Pawou</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                 </div>
+               </div>
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Dewgong <b>#087</b></h2>
+                    <img class="pokemon small" src="./images/087.png" />
+                    <p><b>Dewgong</b> (Japanese: <b>ジュゴン</b> <i>Jugon</i>) is a dual-type <b><font color="blue">Water</font>/<font color="98d8d8">Ice</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Grimer <b>#088</b></h2>
+                    <img class="pokemon small" src="./images/088.png" />
+                    <p><b>Grimer</b> (Japanese: <b>ベトベター</b> <i>Betbeter</i>) is a <b><font color="purple">Poison-type</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                 </div>
+               </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Muk <b>#089</b>
+                    </b></h2>
+                    <img class="pokemon small" src="./images/089.png" />
+                    <p><b>Muk</b> (Japanese: <b>ベトベトン</b> <i>Betbeton</i>) is a <b><font color="purple">Poison-type</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Shellder <b>#090</b></h2>
+                    <img class="pokemon small" src="./images/090.png" />
+                    <p><b>Shellder</b> (Japanese: <b>シェルダー</b> <i>Shellder</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                 </div>
+               </div>
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Cloyster <b>#091</b></h2>
+                    <img class="pokemon small" src="./images/087.png" />
+                    <p><b>Cloyster</b> (Japanese: <b>パルシェン</b> <i>Parshen</i>) is a dual-type <b><font color="blue">Water</font>/<font color="98d8d8">Ice</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Gastly <b>#092</b></h2>
+                    <img class="pokemon small" src="./images/092.png" />
+                    <p><b>Gastly</b> (Japanese: <b>ゴース</b> <i>Ghos</i>) is a dual-type <b><font color="705898">Ghost</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                 </div>
+               </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Haunter <b>#093</b>
+                    </b></h2>
+                    <img class="pokemon small" src="./images/093.png" />
+                    <p><b>Haunter</b> (Japanese: <b>ゴースト</b> <i>Ghost</i>) is a dual-type <b><font color="705898">Ghost</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Gengar <b>#094</b></h2>
+                    <img class="pokemon small" src="./images/094.png" />
+                    <p><b>Gengar</b> (Japanese: <b>ゲンガー</b> <i>Gangar</i>) is a dual-type <b><font color="705898">Ghost</font>/<font color="purple">Poison</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                 </div>
+               </div>
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Onix <b>#095</b></h2>
+                    <img class="pokemon small" src="./images/095.png" />
+                    <p><b>Onix</b> (Japanese: <b>イワーク</b> <i>Iwark</i>) is a dual-type <b><font color="b8a038">Rock</font>/<font color="e0c068">Ground</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pokeball-wrapper">
+                    <img src="./images/pokeball.png" />
+                  </div>
+                  <div class="enhanced">
+                    <h2>Drowzee <b>#096</b></h2>
+                    <img class="pokemon small" src="./images/096.png" />
+                    <p><b>Drowzee</b> (Japanese: <b>スリープ</b> <i>Sleepe</i>) is a <b><font color="f85888">Psychic-type</font></b> Pokémon introduced in Generation I.</p>
+                    <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                 </div>
+               </div>
+              </div>
+          </section>
+          <section id="d5">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Hypno <b>#097</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/097.png" />
+                  <p><b>Hypno</b> (Japanese: <b>スリーパー</b> <i>Sleeper</i>) is a <b><font color="f85888">Psychic-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Krabby <b>#098</b></h2>
+                  <img class="pokemon small" src="./images/098.png" />
+                  <p><b>Krabby</b> (Japanese: <b>クラブ</b> <i>Crab</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Kingler <b>#099</b></h2>
+                  <img class="pokemon small" src="./images/099.png" />
+                  <p><b>Kingler</b> (Japanese: <b>キングラー</b> <i>Kingler</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Voltorb <b>#100</b></h2>
+                  <img class="pokemon small" src="./images/100.png" />
+                  <p><b>Voltorb</b> (Japanese: <b>ビリリダマ</b> <i>Biriridama</i>) is an <b><font color="f8d030">Electric-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Electrode <b>#101</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/101.png" />
+                  <p><b>Electrode</b> (Japanese: <b>マルマイン</b> <i>Marumine</i>) is an <b><font color="f8d030">Electric-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Exeggcute <b>#102</b></h2>
+                  <img class="pokemon small" src="./images/102.png" />
+                  <p><b>Exeggcute</b> (Japanese: <b>タマタマ</b> <i>Tamatama</i>) is a dual-type <b><font color="green">Grass</font>/<font color="f85888">Psychic</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Exeggutor <b>#103</b></h2>
+                  <img class="pokemon small" src="./images/103.png" />
+                  <p><b>Exeggutor</b> (Japanese: <b>ナッシー</b> <i>Nassy</i>) is a dual-type <b><font color="green">Grass</font>/<font color="f85888">Psychic</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Cubone <b>#104</b></h2>
+                  <img class="pokemon small" src="./images/104.png" />
+                  <p><b>Cubone</b> (Japanese: <b>カラカラ</b> <i>Karakara</i>) is a <b><font color="e0c068">Ground-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Marowak <b>#105</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/105.png" />
+                  <p><b>Marowak</b> (Japanese: <b>ガラガラ</b> <i>Garagara</i>) is a <b><font color="e0c068">Ground-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Hitmonlee <b>#106</b></h2>
+                  <img class="pokemon small" src="./images/106.png" />
+                  <p><b>Hitmonlee</b> (Japanese: <b>サワムラー</b> <i>Sawamular</i>) is a <b><font color="c03028">Fighting-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Hitmonchan <b>#107</b></h2>
+                  <img class="pokemon small" src="./images/107.png" />
+                  <p><b>Hitmonchan</b> (Japanese: <b>エビワラー</b> <i>Ebiwalar</i>) is a <b><font color="c03028">Fighting-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Lickitung <b>#108</b></h2>
+                  <img class="pokemon small" src="./images/108.png" />
+                  <p><b>Lickitung</b> (Japanese: <b>ベロリンガ</b> <i>Beroringa</i>) is a <b><font color="A8A878">Normal</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Koffing <b>#109</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/109.png" />
+                  <p><b>Koffing</b> (Japanese: <b>ドガース</b> <i>Dogars</i>) is a <b><font color="purple">Poison-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Weezing <b>#110</b></h2>
+                  <img class="pokemon small" src="./images/094.png" />
+                  <p><b>Weezing</b> (Japanese: <b>マタドガス</b> <i>Matadogas</i>) is a <b><font color="purple">Poison-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Rhyhorn <b>#111</b></h2>
+                  <img class="pokemon small" src="./images/111.png" />
+                  <p><b>Rhyhorn</b> (Japanese: <b>サイホーン</b> <i>Sihorn</i>) is a dual-type <b><font color="e0c068">Ground</font>/<font color="b8a038">Rock</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Rhydon <b>#112</b></h2>
+                  <img class="pokemon small" src="./images/096.png" />
+                  <p><b>Rhydon</b> (Japanese: <b>サイドン</b> <i>Sidon</i>) is a dual-type <b><font color="e0c068">Ground</font>/<font color="b8a038">Rock</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Chansey <b>#113</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/113.png" />
+                  <p><b>Chansey</b> (Japanese: <b>ラッキー</b> <i>Lucky</i>) is a <b><font color="A8A878">Normal-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Tangela <b>#114</b></h2>
+                  <img class="pokemon small" src="./images/114.png" />
+                  <p><b>Tangela</b> (Japanese: <b>モンジャラ</b> <i>Monjara</i>) is a <b><font color="green">Grass-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Kangaskhan <b>#115</b></h2>
+                  <img class="pokemon small" src="./images/115.png" />
+                  <p><b>Kangaskhan</b> (Japanese: <b>ガルーラ</b> <i>Garura</i>) is a <b><font color="A8A878">Normal-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Horsea <b>#116</b></h2>
+                  <img class="pokemon small" src="./images/116.png" />
+                  <p><b>Horsea</b> (Japanese: <b>タッツー</b> <i>Tattu</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+          </section>
+          <section id="d6">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Seadra <b>#117</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/117.png" />
+                  <p><b>Seadra</b> (Japanese: <b>シードラ</b> <i>Seadra</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Goldeen <b>#118</b></h2>
+                  <img class="pokemon small" src="./images/118.png" />
+                  <p><b>Goldeen</b> (Japanese: <b>トサキント</b> <i>Tosakinto</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Seaking <b>#119</b></h2>
+                  <img class="pokemon small" src="./images/119.png" />
+                  <p><b>Seaking</b> (Japanese: <b>アズマオウ</b> <i>Azumao</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Staryu <b>#120</b></h2>
+                  <img class="pokemon small" src="./images/120.png" />
+                  <p><b>Staryu</b> (Japanese: <b>ヒトデマン</b> <i>Hitodeman</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row"> 
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Starmie <b>#121</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/121.png" />
+                  <p><b>Starmie</b> (Japanese: <b>スターミー</b> <i>Starmie</i>) is a dual-type <b><font color="blue">Water</font>/<font color="f85888">Psychic</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Mr. Mime <b>#122</b></h2>
+                  <img class="pokemon small" src="./images/122.png" />
+                  <p><b>Mr. Mime</b> (Japanese: <b>バリヤード</b> <i>Barrierd</i>) is a dual-type <b><font color="f85888">Psychic</font>/<font color="ee99ac">Fairy</font></b> Pokémon introduced in Generation I. Prior to Generation VI, it was a pure <b><font color="f85888">Psychic-type</font></b> Pokémon.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Scyther <b>#123</b></h2>
+                  <img class="pokemon small" src="./images/123.png" />
+                  <p><b>Scyther</b> (Japanese: <b>ストライク</b> <i>Strike</i>) is a dual-type <b><font color="a8b820">Bug</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Jynx <b>#124</b></h2>
+                  <img class="pokemon small" src="./images/124.png" />
+                  <p><b>Jynx</b> (Japanese: <b>ルージュラ</b> <i>Rougela</i>) is a dual-type <b><font color="98d8d8">Ice</font>/<font color="f85888">Psychic</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Electabuzz <b>#125</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/125.png" />
+                  <p><b>Electabuzz</b> (Japanese: <b>エレブー</b> <i>Eleboo</i>) is an <b><font color="f8d030">Electric-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Magmar <b>#126</b></h2>
+                  <img class="pokemon small" src="./images/126.png" />
+                  <p><b>Magmar</b> (Japanese: <b>ブーバー</b> <i>Boober</i>) is a <b><font color="red">Fire-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Pinsir <b>#127</b></h2>
+                  <img class="pokemon small" src="./images/127.png" />
+                  <p><b>Pinsir</b> (Japanese: <b>カイロス</b> <i>Kailios</i>) is a <b><font color="a8b820">Bug-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Tauros <b>#128</b></h2>
+                  <img class="pokemon small" src="./images/128.png" />
+                  <p><b>Tauros</b> (Japanese: <b>ケンタロス</b> <i>Kentauros</i>) is a <b><font color="A8A878">Normal</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Magikarp <b>#129</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/129.png" />
+                  <p><b>Magikarp</b> (Japanese: <b>コイキング</b> <i>Koiking</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Gyarados <b>#130</b></h2>
+                  <img class="pokemon small" src="./images/130.png" />
+                  <p><b>Gyarados</b> (Japanese: <b>ギャラドス</b> <i>Gyarados</i>) is a dual-type <b><font color="blue">Water</font>/<font color="a890f0">Flying</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Lapras <b>#131</b></h2>
+                  <img class="pokemon small" src="./images/131.png" />
+                  <p><b>Lapras</b> (Japanese: <b>ラプラス</b> <i>Laplace</i>) is a dual-type <b><font color="blue">Water</font>/<font color="98d8d8">Ice</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Ditto <b>#132</b></h2>
+                  <img class="pokemon small" src="./images/132.png" />
+                  <p><b>Ditto</b> (Japanese: <b>メタモン</b> <i>Metamon</i>) is a <b><font color="A8A878">Normal-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Eevee <b>#133</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/133.png" />
+                  <p><b>Eevee</b> (Japanese: <b>イーブイ</b> <i>Eievui</i>) is a <b><font color="A8A878">Normal-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Vaporeon <b>#134</b></h2>
+                  <img class="pokemon small" src="./images/134.png" />
+                  <p><b>Vaporeon</b> (Japanese: <b>シャワーズ</b> <i>Showers</i>) is a <b><font color="blue">Water-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Jolteon <b>#135</b></h2>
+                  <img class="pokemon small" src="./images/135.png" />
+                  <p><b>Jolteon</b> (Japanese: <b>サンダース</b> <i>Thunders</i>) is an <b><font color="f8d030">Electric-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Flareon <b>#136</b></h2>
+                  <img class="pokemon small" src="./images/136.png" />
+                  <p><b>Flareon</b> (Japanese: <b>ブースター</b> <i>Booster</i>) is a <b><font color="red">Fire-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+          </section>
+          <section id="d7">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Porygon <b>#137</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/137.png" />
+                  <p><b>Porygon</b> (Japanese: <b>ポリゴン</b> <i>Porygon</i>) is a <b><font color="A8A878">Normal-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Omanyte <b>#138</b></h2>
+                  <img class="pokemon small" src="./images/138.png" />
+                  <p><b>Omanyte</b> (Japanese: <b>オムナイト</b> <i>Omnite</i>) is a dual-type <b><font color="b8a038">Rock</font>/<font color="blue">Water</font></b> <b>Fossil</b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Omastar <b>#139</b></h2>
+                  <img class="pokemon small" src="./images/139.png" />
+                  <p><b>Omastar</b> (Japanese: <b>オムスター</b> <i>Omstar</i>) is a dual-type <b><font color="b8a038">Rock</font>/<font color="blue">Water</font></b> <b>Fossil</b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Kabuto <b>#140</b></h2>
+                  <img class="pokemon small" src="./images/140.png" />
+                  <p><b>Kabuto</b> (Japanese: <b>カブト</b> <i>Kabuto</i>) is a dual-type <b><font color="b8a038">Rock</font>/<font color="blue">Water</font></b> <b>Fossil</b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Kabutops <b>#141</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/141.png" />
+                  <p><b>Kabutops</b> (Japanese: <b>カブトプス</b> <i>Kabutops</i>) is a dual-type <b><font color="b8a038">Rock</font>/<font color="blue">Water</font></b> <b>Fossil</b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Aerodactyl <b>#142</b></h2>
+                  <img class="pokemon small" src="./images/142.png" />
+                  <p><b>Aerodactyl</b> (Japanese: <b>プテラ</b> <i>Ptera</i>) is a dual-type <b><font color="b8a038">Rock</font>/<font color="a890f0">Flying</font></b> <b>Fossil</b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Snorlax <b>#143</b></h2>
+                  <img class="pokemon small" src="./images/143.png" />
+                  <p><b>Snorlax</b> (Japanese: <b>カビゴン</b> <i>Kabigon</i>) is a <b><font color="A8A878">Normal-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Articuno <b>#144</b></h2>
+                  <img class="pokemon small" src="./images/144.png" />
+                  <p><b>Articuno</b> (Japanese: <b>フリーザー</b> <i>Freezer</i>) is a dual-type <b><font color="98d8d8">Ice</font>/<font color="a890f0">Flying</font> Legendary Pokémon</b> introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Zapdos <b>#145</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/145.png" />
+                  <p><b>Zapdos</b> (Japanese: <b>サンダー</b> <i>Thunder</i>) is a dual-type <b><font color="f8d030">Electric</font>/<font color="a890f0">Flying</font> Legendary Pokémon</b> introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Moltres <b>#146</b></h2>
+                  <img class="pokemon small" src="./images/146.png" />
+                  <p><b>Moltres</b> (Japanese: <b>ファイヤー</b> <i>Fire</i>) is a dual-type <b><font color="red">Fire</font>/<font color="a890f0">Flying</font> Legendary Pokémon</b> introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Dratini <b>#147</b></h2>
+                  <img class="pokemon small" src="./images/147.png" />
+                  <p><b>Dratini</b> (Japanese: <b>ミニリュウ</b> <i>Miniryu</i>) is a <b><font color="7038f8">Dragon-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Dragonair <b>#148</b></h2>
+                  <img class="pokemon small" src="./images/148.png" />
+                  <p><b>Dragonair</b> (Japanese: <b>ハクリュー</b> <i>Hakuryu</i>) is a <b><font color="7038f8">Dragon-type</font></b> Pokémon introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Dragonite <b>#149</b>
+                  </b></h2>
+                  <img class="pokemon small" src="./images/149.png" />
+                  <p><b>Dragonite</b> (Japanese: <b>カイリュー</b> <i>Kairyu<i>) is a dual-type <b><font color="7038f8">Dragon</font>/<font color="a890f0">Flying</font> pseudo-legendary Pokémon</b> introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Mewtwo <b>#150</b></h2>
+                  <img class="pokemon small" src="./images/150.png" />
+                  <p><b>Mewtwo</b> (Japanese: <b>ミュウツー</b> <i>Mewtwo</i>) is a <b><font color="f85888">Psychic-type</font> Legendary Pokémon</b> introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+               </div>
+             </div>
+              <div class="col-md-4">
+                <div class="pokeball-wrapper">
+                  <img src="./images/pokeball.png" />
+                </div>
+                <div class="enhanced">
+                  <h2>Mew <b>#151</b></h2>
+                  <img class="pokemon small" src="./images/151.png" />
+                  <p><b>Mew</b> (Japanese: <b>ミュウ</b> <i>Mew</i>) is a <b><font color="f85888">Psychic-type</font> Mythical Pokémon</b> introduced in Generation I.</p>
+                  <p><a class="btn btn-default" href="wip.html" role="button">View details &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <ul  style="margin-top: 2rem;color: antiquewhite;">
+            <li id="c0" onclick="swap(c0)"><a href="#">1</a></li>
+            <li id="c1" onclick="swap(c1)"><a href="#">2</a></li>
+            <li id="c2" onclick="swap(c2)"><a href="#">3</a></li>
+            <li id="c3" onclick="swap(c3)"><a href="#">4</a></li>
+            <li id="c4" onclick="swap(c4)"><a href="#">5</a></li>
+            <li id="c5" onclick="swap(c5)"><a href="#">6</a></li>
+            <li id="c6" onclick="swap(c6)"><a href="#">7</a></li>
+            <li id="c7" onclick="swap(c7)"><a href="#">8</a></li>
+          </ul>
+        </div>
+      <div>
+
+      </div>
+    </nav>
+
+    <div class="container">
+      <hr>
+      
+      <div class="row">
+        <div class="col-md-12">
+          <div class="enhanced">
+          <h1>Kanto (Japanese: <b>カントー</b>)</h1>
+          <p>The Kanto region (Japanese: <b>カントー地方</b> Kanto region) is a region of the Pokémon world. Kanto is located east of Johto, which together form a joint landmass that is south of Sinnoh.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; 2022 Gerbieboy, Inc.</p>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
